@@ -1,0 +1,13 @@
+prefix=/Library/Frameworks/GTK+.framework/Versions/2.14.X11/Resources
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+pango_module_version=1.6.0
+
+Name: Pango
+Description: Internationalized text handling
+Version: 1.22.4
+Requires: glib-2.0,gobject-2.0,gmodule-no-export-2.0
+Libs: -L${libdir} -lpango-1.0 
+Cflags: -I${includedir}/pango-1.0

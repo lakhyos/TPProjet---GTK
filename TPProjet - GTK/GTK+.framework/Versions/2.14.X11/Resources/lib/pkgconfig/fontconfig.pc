@@ -1,0 +1,11 @@
+prefix=/Library/Frameworks/GTK+.framework/Versions/2.14.X11/Resources
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.8.0
+Libs: -L${libdir} -lfontconfig
+Libs.private: -lxml2    -L/Library/Frameworks/GTK+.framework/Versions/2.14.X11/Resources/lib -lfreetype -lz -liconv
+Cflags: -I${includedir}

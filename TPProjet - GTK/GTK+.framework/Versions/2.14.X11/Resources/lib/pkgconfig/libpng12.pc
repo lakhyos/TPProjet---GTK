@@ -1,0 +1,11 @@
+prefix=/Library/Frameworks/GTK+.framework/Versions/2.14.X11/Resources
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/libpng12
+
+Name: libpng
+Description: Loads and saves PNG files
+Version: 1.2.46
+Libs: -L${libdir} -lpng12
+Libs.private: -lz 
+Cflags: -I${includedir} 
