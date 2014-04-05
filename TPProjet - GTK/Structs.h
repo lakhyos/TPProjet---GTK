@@ -18,8 +18,21 @@ typedef struct etudiant{
     int anDiplome;
 } etudiant;
 
+typedef struct acces
+{
+    char cne[20];
+    char password[30];
+}acces;
+
 typedef struct tableau
 {
     etudiant elem[MAX_ELEM];
     int dernier_elem;
 }tableau;
+
+typedef struct authentification
+{
+    acces entree[MAX_ELEM];
+    int derniere_entree;
+}authentification;
+
